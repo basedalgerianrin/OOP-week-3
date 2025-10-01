@@ -7,19 +7,25 @@ public class Calculator {
 
     // You will add
     public int sub(int a, int b) {
+
         return a - b;
     }
     // subtract
 
     public int multi(int a, int b) {
+
         return a * b;
     }
     //multiply
 
 
     public int divide(int a, int b) {
+
         return a / b;
+
+
     }
+
     // divide
 }
 

@@ -9,13 +9,37 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         // Create an instance of Calculator
         Calculator calc = new Calculator();
+
+        //Input values
         System.out.println("Simple Calculator - Add Two Numbers");
         System.out.print("Enter first number: ");
         int a = sc.nextInt();
         System.out.print("Enter second number: ");
         int b = sc.nextInt();
-        int result = calc.add(a, b);
-        System.out.println("Result: " + result);
+        double results = 0;
+
+        //calling the methods from classes
+
+        switch(calc){
+            case 'add':
+                calc.add(a,b);
+                break;
+            case'subtract':
+                calc.sub(a,b);
+                break;
+            case 'multiply':
+                calc.multi(a,b);
+                break;
+            case 'divide':
+                calc.divide(a,b);
+                break;
+            default:
+                System.out.print("Invalid input");
+                break;
+        }
+
+        //output results
+        System.out.println("Result: " + results);
         sc.close();
     }
     //test
